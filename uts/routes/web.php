@@ -16,9 +16,9 @@ use App\Models\Stand;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('Auth/login');
+});
 
 Auth::routes();
 

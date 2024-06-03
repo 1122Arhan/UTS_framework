@@ -46,7 +46,7 @@
                                                         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body">
-                                                        Yakin Data Anggota {{$item->nama}} di Hapus?
+                                                        Yakin Data Stand {{$item->stand}} di Hapus?
                                                         </div>
                                                         <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
