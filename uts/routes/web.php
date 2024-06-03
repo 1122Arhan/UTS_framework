@@ -24,3 +24,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/stand', [StandController::class, 'index']);
+Route::get('/stand/form', [StandController::class, 'create']);
+Route::post('/stand/store', [StandController::class, 'store']);

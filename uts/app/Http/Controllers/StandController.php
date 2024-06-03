@@ -16,7 +16,7 @@ class StandController extends Controller
 
     public function create()
     {
-        //
+        return view('stand.form');
     }
 
     /**
@@ -24,7 +24,13 @@ class StandController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $std = new Stand;
+        $std->kd_stand = $request->kd_stand;
+        $std->stand    = $request->stand;
+        $std->telp     = $request->telp;
+        $std->save();
+
+        return redirect('/stand/');
     }
 
     /**

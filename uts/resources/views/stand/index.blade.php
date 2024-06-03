@@ -9,7 +9,7 @@
                         </div>  
                         <div class="card-header">
                         <h3 class="text-left">                           
-                            <a href="/customer/form/" class="btn btn-primary"><i class="fa fa-folder-plus"></i> Tambah Data</a>
+                            <a href="/stand/form/" class="btn btn-primary"><i class="fa fa-folder-plus"></i> Tambah Data</a>
                         </h3>
                         </div>
                         <div class="card-body">
@@ -28,7 +28,7 @@
                                     <tbody>
                                         @forelse ($std as $item)
                                         <tr>
-                                        <td>{{$nomor++}}</td>
+                                        <td>{{$no++}}</td>
                                         <td>{{$item->kd_stand}}</td>
                                         <td>{{$item->stand}}</td>
                                         <td>{{$item->telp}}</td>
