@@ -69,6 +69,8 @@ class StandController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $std = Stand::find($id);
+        $std->delete();
+        return redirect('/stand/');
     }
 }

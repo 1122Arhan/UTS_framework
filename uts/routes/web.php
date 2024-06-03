@@ -28,3 +28,4 @@ Route::get('/stand/form', [StandController::class, 'create']);
 Route::post('/stand/store', [StandController::class, 'store']);
 Route::get('/stand/edit/{id}', [StandController::class, 'edit']);
 Route::put('/stand/{id}', [StandController::class, 'update']);
+Route::delete('/stand/{id}', [StandController::class, 'destroy']);
