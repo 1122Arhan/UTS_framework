@@ -33,7 +33,7 @@
                                         <td>{{$item->stand}}</td>
                                         <td>{{$item->telp}}</td>
                                             <td>
-                                                <a href="/anggota/edit/{{$item->id}}" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
+                                                <a href="/stand/edit/{{$item->id}}" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
                                                 <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#hapus{{$item->id}}">
                                                     <i class="fa fa-trash"></i>
                                                 </button>
@@ -50,7 +50,7 @@
                                                         </div>
                                                         <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                                        <form action="/customer/{{$item->id}}" method="post">
+                                                        <form action="/stand/{{$item->id}}" method="post">
                                                             @method('DELETE')
                                                             @csrf
                                                             <button type="submit" class="btn btn-danger">Hapus</button>
